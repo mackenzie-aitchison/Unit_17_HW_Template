@@ -43,60 +43,38 @@ header p {
   display: inline-block;
 }
 
-.Forte {
+.Work {
   background-color: white;
   padding: 100px 15px;
   float: left;
-}
-
-.content {
-  float: right;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #FFFFFF;
-  text-align: left;
-}
-
-.Arts {
-  background-color: white;
-  padding: 100px 15px;
-  float: left;
-  grid-area: myArea;
-  display: inline-grid;
-}
-
-.grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.content.Arts {
-  float: right;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #FFFFFF;
-  text-align: left;
-}
-.containergrid
-{
-  display: inline-grid;
-  grid-template-columns: 50% 50%;
-}
-.DOI {
-  background-color: white;
-  padding: 100px 15px;
-  float: left;
+  
 }
 
-.content.DOI {
-  float: right;
-  max-width: 300px;
+.project {
+  max-width: 100%;
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
   text-align: left;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "projectimage projectcontent"
+  ;
+ 
 }
+
+.projectimage {
+  grid-area: projectimage;
+}
+
+.projectcontent {
+  grid-area: projectcontent;
+}
+
+
+
 
 button {
   padding: 15px;
@@ -123,4 +101,18 @@ footer ul {
 footer li {
   display: inline-block;
   padding: 0px 7px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projectimage" 
+    "projectcontent"
+    ;
+    
+  }
+  
 }

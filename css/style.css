@@ -43,17 +43,49 @@ header p {
   display: inline-block;
 }
 
-.heroImg {
-  background-color: #EBEBEB;
+.Forte {
+  background-color: white;
   padding: 100px 15px;
+  float: left;
 }
 
 .content {
+  float: right;
   max-width: 300px;
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
-  text-align: center;
+  text-align: left;
+}
+
+.Arts {
+  background-color: white;
+  padding: 100px 15px;
+  float: left;
+}
+
+.content.Arts {
+  float: right;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+
+.DOI {
+  background-color: white;
+  padding: 100px 15px;
+  float: left;
+}
+
+.content.DOI {
+  float: right;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: left;
 }
 
 button {
@@ -69,6 +101,7 @@ footer {
   background-color: white;
   padding: 5px;
   color: black;
+
 }
 
 footer ul {

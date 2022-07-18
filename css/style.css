@@ -62,8 +62,14 @@ header p {
   background-color: white;
   padding: 100px 15px;
   float: left;
+  grid-area: myArea;
+  display: inline-grid;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .content.Arts {
   float: right;
   max-width: 300px;
@@ -72,7 +78,11 @@ header p {
   background-color: #FFFFFF;
   text-align: left;
 }
-
+.containergrid
+{
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+}
 .DOI {
   background-color: white;
   padding: 100px 15px;
